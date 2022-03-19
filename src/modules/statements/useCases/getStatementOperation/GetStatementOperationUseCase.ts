@@ -10,7 +10,7 @@ interface IRequest {
 }
 
 @injectable()
-export class GetStatementOperationUseCase {
+ class GetStatementOperationUseCase {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
@@ -36,3 +36,5 @@ export class GetStatementOperationUseCase {
       return statementOperation;
   }
 }
+
+export { GetStatementOperationUseCase }
